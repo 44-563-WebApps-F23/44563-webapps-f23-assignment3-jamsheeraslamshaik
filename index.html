@@ -20,7 +20,54 @@
   <li>cakes</li>
   <li>drinks</li>
 </ul>  
-<a href="file:///C:/Users/S567366/Documents/GitHub/webapps-repos/44563-webapps-f23-assignment3-jamsheeraslamshaik/mystats.html">BEST FOOD</a>
-        </body>
+<a href="file:///C:/Users/S567366/Documents/GitHub/webapps-repos/44563-webapps-f23-assignment3-jamsheeraslamshaik/mystats.html" target="_blank">BEST FOOD</a>
+<hr> 
+<h4> List of sports </h4> 
+ <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style> 
+ <table>
+    <tr>
+      <th>Name of the Sports</th>
+      <th>Reason to play</th>
+      <th>Hours</th>
+    </tr>
+    <tr>
+      <td>cricket</td>
+      <td>Good for health</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>volley ball</td>
+      <td>help to loss weight</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Basket Ball</td>
+      <td>Help to grow height</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Bass Ball</td>
+      <td>Good for muscel </td>
+      <td>13</td>
+    </tr>
+  </table>   
+  <hr>
+  <h4>CODE DISPLAY</h4>
+  <blockquote cite="  https://css-tricks.com/snippets/htaccess/force-correct-content-type-for-xhtml-documents/">Most webservers serve XHTML content as text/html what is definitly the right way to handle XHTML documents. In case the server isn’t doing that correctly, you can force it on Apache servers with .htaccess:
+    
+  </blockquote>
+ <pre>RewriteEngine On
+    RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml
+    RewriteCond %{HTTP_ACCEPT} !application/xhtml\+xml\s*;\s*q=0
+    RewriteCond %{REQUEST_URI} \.html$
+    RewriteCond %{THE_REQUEST} HTTP/1\.1
+    RewriteRule .* - "[T=application/xhtml+xml; charset=ISO-8859-1]"</pre>
+</body>
+
     </head>
 </html>
